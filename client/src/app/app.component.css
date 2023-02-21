@@ -1,0 +1,9 @@
+:host >>> .card.accordionStyle .card-header, .panel.accordionStyle {
+    background-color: #085c80;
+    color: white;
+}
+
+:host >>> .btn{
+    text-decoration: none;
+    color: white;
+}

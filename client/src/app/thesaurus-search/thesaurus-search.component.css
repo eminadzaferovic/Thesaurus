@@ -1,0 +1,12 @@
+.SearchBar input {
+    margin-left: 100px;
+    height: 45px;
+    width: 650px;
+    display: inline-flex;
+}
+
+.Search{
+    width: 80%;
+    margin-left: 25%;
+}
+

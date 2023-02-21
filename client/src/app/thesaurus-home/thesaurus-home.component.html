@@ -1,0 +1,25 @@
+<div *ngIf="searchTerm == ''" class="container col-sm-6 col-md-6 col-lg-6 mt-5">
+  <h3 class="mb-5" style="color: #085c80;">Take a look at some of our recently added words:</h3>
+<accordion *ngFor="let item of thesaurus">
+  <accordion-group [panelClass]="'accordionStyle'" heading="{{item.key | uppercase}}">
+    <!-- {{item.value | uppercase}} -->
+    <div class="circleItem" *ngFor="let subItem of item.value?.split(',')">
+      <span class="circle">{{ subItem }}</span>
+   </div>
+  </accordion-group>
+  <br>
+</accordion>
+</div>
+
+ <div *ngIf="searchTerm != ''" class="container col-sm-6 col-md-6 col-lg-6 mt-5">
+<accordion>
+  <accordion-group [panelClass]="'accordionStyle'" heading="{{searchTerm | uppercase}}">
+     <!-- {{wordSynonyms[0] | uppercase}}  -->
+    <div class="circleItem" *ngFor="let subItem of wordSynonyms?.split(',')">
+      <span class="circle">{{ subItem }}</span>
+      </div>
+  </accordion-group>
+  <br>
+</accordion>
+</div>
+

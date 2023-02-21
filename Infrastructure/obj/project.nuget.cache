@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "hytXN8lC0hmhPnncnnLWs7VUpuZnpmBGtL1GseL2nlSUowErQEL0ZagyKRA19xTC7mwOtoosrdUGf6F6gggN7A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\emina.dzaferovic\\Documents\\Thesaurus\\Infrastructure\\Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\emina.dzaferovic\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.2\\pipelines.sockets.unofficial.2.2.2.nupkg.sha512",
+    "C:\\Users\\emina.dzaferovic\\.nuget\\packages\\stackexchange.redis\\2.6.90\\stackexchange.redis.2.6.90.nupkg.sha512",
+    "C:\\Users\\emina.dzaferovic\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

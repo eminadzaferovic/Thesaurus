@@ -1,0 +1,45 @@
+<!-- <form [formGroup]="thesaurusForm">
+  <div class="row d-flex justify-content-center mt-5">
+    <div class="col-sm-4">
+      <div class="form-group">
+          <label>Word</label>
+          <input formControlName="word" type="text" placeholder="Word" class="form-control left">          
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+          <label>Synonym</label>
+          <input formControlName="synonym" type="text" placeholder="Synonym" class="form-control right">          
+      </div>
+    </div>
+    <div class="col-sm-2" style="margin-top: 1.9%">
+          <button class="btn btn-success" (click)="addSynonym()">Add</button>         
+    </div>  
+  </div>  
+</form> -->
+<div class="d-flex min-vh-100 justify-content-center py-5">
+  <form [formGroup]="thesaurusForm" (ngSubmit)="onSubmit()">
+    <div class="col-md-12 mb-3 st">
+      <div class="form-group">
+        <label>Word</label>
+        <input type="text" class="form-control" placeholder="Enter word" formControlName="thesaurusKey"
+        [ngClass]="{ 'is-invalid': submitted && f.thesaurusKey.errors }" >
+        <div *ngIf="submitted && f.thesaurusKey.errors" class="invalid-feedback">
+          <div *ngIf="f.thesaurusKey.errors.required">Word is required</div>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-12 mb-3 wi st">
+      <div class="form-group">
+        <label>Synonym</label>
+        <input type="text" class="form-control" placeholder="Enter synonym" formControlName="thesaurusValue"
+        [ngClass]="{ 'is-invalid': submitted && f.thesaurusValue.errors }">
+        <div *ngIf="submitted && f.thesaurusValue.errors" class="invalid-feedback">
+          <div *ngIf="f.thesaurusValue.errors.required">Synonym is required</div>
+      </div>
+      </div>
+    </div>
+    <!-- (click)="addSynonym()" -->
+    <button type="submit" class="btn btn-success subbut">Submit</button>
+  </form>
+</div>
