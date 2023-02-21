@@ -1,9 +1,10 @@
 # Thesaurus
 
-Web application that enables the user to:
-* search for synonyms of a word throughtout the thesaurus
-* add new synonyms for existing word to the thesaurus
-* add new word and corresponding synonyms to the thesaurus
+Thesaurus is a simple web application that offers the following functionality:
+
+* Search for synonyms of a word throughout the thesaurus
+* Add new synonyms for existing word to the thesaurus
+* Add new word and corresponding synonyms to the thesaurus
 
 ## Built With
 
